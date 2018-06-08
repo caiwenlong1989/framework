@@ -1,0 +1,32 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/framework?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: mysql
+    type: com.alibaba.druid.pool.DruidDataSource
+    initialSize: 1
+    minIdle: 20
+    maxActive: 50
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  mail:
+    host: smtp.exmail.qq.com
+    port: 465
+    username: service@aloestec.com
+    password: Aloestec20170901
+    properties:
+      mail:
+        smtp:
+          auth: true
+          ssl:
+            enable: true
+
+my:
+  project:
+    name: aloestec-framework
+    sendErrorMail: true
