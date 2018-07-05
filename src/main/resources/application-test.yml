@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8001
 
 spring:
   datasource:
@@ -8,9 +8,13 @@ spring:
     username: root
     password: mysql
     type: com.alibaba.druid.pool.DruidDataSource
-    initialSize: 1
-    minIdle: 20
-    maxActive: 50
+    druid:
+      initialSize: 1
+      minIdle: 20
+      maxActive: 50
+  http:
+    encoding:
+      force: true
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
@@ -18,7 +22,7 @@ spring:
     host: smtp.exmail.qq.com
     port: 465
     username: service@aloestec.com
-    password:
+    password: 
     properties:
       mail:
         smtp:
@@ -26,7 +30,10 @@ spring:
           ssl:
             enable: true
 
-my:
-  project:
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+
+app:
     name: aloestec-framework
-    sendErrorMail: true
+    send-error-mail: false

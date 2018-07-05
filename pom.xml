@@ -54,6 +54,11 @@
             <version>1.1.8</version>
         </dependency>
         <dependency>
+           <groupId>com.alibaba</groupId>
+           <artifactId>druid-spring-boot-starter</artifactId>
+           <version>1.1.10</version>
+        </dependency>
+        <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             </dependency>
@@ -112,7 +117,7 @@
                     <configurationSourceDirectory>src/main/resources</configurationSourceDirectory>
                     <repositoryLayout>flat</repositoryLayout>
                     <includeConfigurationDirectoryInClasspath>true</includeConfigurationDirectoryInClasspath>
-                    <extraJvmArguments>-server -Xms2G -Xmx2G -Xmn800m
+                    <!-- <extraJvmArguments>-server -Xms2G -Xmx2G -Xmn800m
                         -XX:PermSize=64m -XX:MaxPermSize=256m
                         -XX:SurvivorRatio=4 -Djava.awt.headless=true
                         -XX:+PrintGCTimeStamps -XX:+PrintGCDetails
@@ -121,7 +126,7 @@
                         -XX:+UseConcMarkSweepGC
                         -XX:MaxTenuringThreshold=15 -verbose:gc
                         -Xloggc:/var/log/java/gc_%p.log
-                        -XX:ErrorFile=/var/log/java/java_error_%p.log</extraJvmArguments>
+                        -XX:ErrorFile=/var/log/java/java_error_%p.log</extraJvmArguments> -->
                     <platforms>
                         <platform>windows</platform>
                         <platform>unix</platform>

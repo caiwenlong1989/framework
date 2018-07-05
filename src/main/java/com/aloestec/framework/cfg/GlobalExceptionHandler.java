@@ -46,6 +46,7 @@ public class GlobalExceptionHandler {
             MimeMessageHelper helper = new MimeMessageHelper(message, true, "UTF-8");
             helper.setFrom("service@aloestec.com");
             helper.setTo("caiwenlong@aloestec.com");
+//            helper.setCc("");
             helper.setSubject("aloestec-framework-exception");
             helper.setText(print(e));
             mailSender.send(message);
