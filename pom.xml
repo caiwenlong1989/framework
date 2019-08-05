@@ -134,7 +134,7 @@
                     <programs>
                         <program>
                             <id>${project.artifactId}</id>
-                            <mainClass>com.aloestec.framework.FrameworkApplication</mainClass>
+                            <mainClass>com.dy.framework.FrameworkApplication</mainClass>
                         </program>
                     </programs>
                 </configuration>
