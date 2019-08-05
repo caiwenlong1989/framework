@@ -2,7 +2,7 @@
 <configuration>
     <property name="CONSOLE_LOG_PATTERN"
         value="%d{yyyy-MM-dd HH:mm:ss.SSS} ${LOG_LEVEL_PATTERN:-%5p} ${PID:- } --- [%15.15t] %-40.40logger{39} Line:%-3L : %m%n" />
-    <property name="log.base" value="logs/aloestec-framework" />
+    <property name="log.base" value="logs/dy-framework" />
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
             <pattern>${CONSOLE_LOG_PATTERN}</pattern>
@@ -24,8 +24,8 @@
             <MaxHistory>10</MaxHistory>
         </rollingPolicy>
     </appender>
-    <logger name="com.aloestec.framework" level="INFO" />
-    <logger name="com.aloestec.framework.mapper" level="DEBUG" />
+    <logger name="com.dy.framework" level="INFO" />
+    <logger name="com.dy.framework.mapper" level="DEBUG" />
     <root level="INFO">
         <appender-ref ref="CONSOLE" />
         <appender-ref ref="FILE" />
